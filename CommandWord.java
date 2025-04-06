@@ -7,5 +7,10 @@
 public enum CommandWord
 {
     // A value for each command word, plus one for unrecognized commands.
-    GO, QUIT, HELP, UNKNOWN
+    ALLEZ, FIN, HELP, UNKNOWN, LOOK //Question 35 Lab 9
+    
+    /**
+     * Question 36. I only had to change these and switch them in CommandWords 
+     * and Game class
+     */
 }

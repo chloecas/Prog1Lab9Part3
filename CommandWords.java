@@ -23,9 +23,15 @@ public class CommandWords
     public CommandWords()
     {
         validCommands = new HashMap<>();
-        validCommands.put("go", CommandWord.GO);
-        validCommands.put("help", CommandWord.HELP);
-        validCommands.put("quit", CommandWord.QUIT);
+        validCommands.put("go", CommandWord.ALLEZ);
+        validCommands.put("aid", CommandWord.HELP);
+        /**
+         * Question 37. The welcome message still says to type help if the 
+         * player needs assistance, we would have to change the word for help
+         * in the welcome message as well.
+         */
+        validCommands.put("quit", CommandWord.FIN);
+        validCommands.put("look", CommandWord.LOOK); //Question 35 Lab 9
     }
 
     /**

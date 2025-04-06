@@ -111,12 +111,17 @@ public class Game
                 printHelp();
                 break;
 
-            case GO:
+            case ALLEZ:
                 goRoom(command);
                 break;
 
-            case QUIT:
+            case FIN:
                 wantToQuit = quit(command);
+                break;
+            
+                //Question 35 Lab 9
+            case LOOK:
+                System.out.println(currentRoom.getLongDescription());
                 break;
         }
         return wantToQuit;
